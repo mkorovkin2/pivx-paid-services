@@ -1,0 +1,16 @@
+.cache/
+**/data/
+**/__pycache__/
+**/*.pyc
+**/config.toml
+**/wallet-config.toml
+.DS_Store
+
+# Local PR body and upstream reference clones are not project deliverables.
+/PR_DESCRIPTION.md
+/MyPIVXWallet/
+/PIVX/
+/librustpivx/
+/pivx-agent-kit/
+/pivx-wallet-kit/
+/pivx-merchant-kit/
