@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pivx-paid-services:response:1.0",
+  "title": "PIVX paid service result",
+  "type": "object",
+  "required": ["schema_version", "service_id", "request_id", "data"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "service_id": {"enum": ["analytics", "digest"]},
+    "request_id": {"type": "string", "minLength": 1, "maxLength": 128},
+    "data": {"type": "object"}
+  },
+  "allOf": [
+    {"if": {"properties": {"service_id": {"const": "analytics"}}}, "then": {"properties": {"data": {"$ref": "#/$defs/analytics"}}}},
+    {"if": {"properties": {"service_id": {"const": "digest"}}}, "then": {"properties": {"data": {"$ref": "#/$defs/digest"}}}}
+  ],
+  "$defs": {
+    "analytics": {
+      "type": "object", "required": ["schema_version", "generated_at", "network", "connections", "masternodes", "next_superblock_height", "blocks_until_superblock", "proposals", "sources"],
+      "properties": {
+        "schema_version": {"const": "1.0"}, "generated_at": {"type": "integer"},
+        "network": {"type": "object", "required": ["chain", "blocks"], "properties": {"chain": {"type": "string"}, "blocks": {"type": "integer", "minimum": 0}}},
+        "connections": {"type": ["integer", "null"]}, "masternodes": {"type": "object"},
+        "next_superblock_height": {"type": "integer"}, "blocks_until_superblock": {"type": "integer", "minimum": 0},
+        "proposals": {"type": "array", "items": {"type": "object"}}, "sources": {"type": "array", "minItems": 1}
+      }
+    },
+    "digest": {
+      "type": "object", "required": ["schema_version", "generated_at", "window", "method", "partial_coverage", "coverage", "items"],
+      "properties": {
+        "schema_version": {"const": "1.0"}, "generated_at": {"type": "integer"}, "method": {"type": "string"},
+        "window": {"type": "object", "required": ["from", "to"], "properties": {"from": {"type": "integer"}, "to": {"type": "integer"}}},
+        "partial_coverage": {"type": "boolean"}, "coverage": {"type": "array", "minItems": 1},
+        "items": {"type": "array", "items": {"type": "object", "required": ["title", "summary", "url", "published_at", "source", "topic"], "properties": {"title": {"type": "string"}, "summary": {"type": "string"}, "url": {"type": "string", "format": "uri"}, "published_at": {"type": "integer"}, "source": {"type": "string"}, "topic": {"type": "string"}}}}
+      }
+    }
+  }
+}

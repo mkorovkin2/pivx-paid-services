@@ -1,0 +1,23 @@
+[Unit]
+Description=PIVX memo-paid data services
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pivx-services
+Group=pivx-services
+WorkingDirectory=/opt/pivx-paid-services
+ExecStart=/usr/bin/python3 -m paid_services serve --config /etc/pivx-paid-services/config.toml
+EnvironmentFile=-/etc/pivx-paid-services/rpc.env
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/pivx-paid-services
+
+[Install]
+WantedBy=multi-user.target

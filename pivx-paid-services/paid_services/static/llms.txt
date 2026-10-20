@@ -1,0 +1,11 @@
+# PIVX paid agent services — testnet6 prototype
+
+> Public chain/governance analytics and sourced release excerpts, bought with shielded testnet6 tPIV and an encrypted invoice memo. tPIV has no cash value.
+
+- /v1/services: catalog, network, illustrative reference prices and receiver readiness.
+- /quickstart: dedicated local Core testnet6 setup and CLI/MCP purchase instructions.
+- /stats.json: aggregate activity without addresses, memos, txids or payer identifiers.
+- Service MCP: list_services, get_quote, create_invoice, check_invoice, call_service.
+- Separate Core wallet MCP: pay_testnet_invoice accepts the complete returned testnet invoice object.
+
+Upstream Agent Kit currently uses mainnet; use the documented Core fallback for this prototype. Never send to simulation invoices. Real on-chain execution and public beta are still pending verification. Preserve request IDs for retries; poll invoices at most every ten seconds.

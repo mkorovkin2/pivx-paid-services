@@ -1,0 +1,8 @@
+# Existing host only; no infrastructure is provisioned by this example.
+# Set public_url in config.toml to this exact HTTPS origin.
+services.YOUR-DOMAIN {
+    request_body {
+        max_size 16KB
+    }
+    reverse_proxy 127.0.0.1:8787
+}

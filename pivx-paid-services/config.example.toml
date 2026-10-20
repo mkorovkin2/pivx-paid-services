@@ -1,0 +1,53 @@
+# Phase 1: testnet6 only. This service never spends or unlocks a wallet.
+network = "testnet6"
+receiver = "core"
+data_dir = "./data/testnet6-service"
+bind = "127.0.0.1"
+port = 8787
+public_url = "http://127.0.0.1:8787"
+
+# Obtain from a dedicated, synced testnet6 Core receiver. Mainnet ps1 is rejected.
+address = "REPLACE_WITH_CHECKSUMMED_PTESTSAPLING1_ADDRESS"
+rpc_url = "http://127.0.0.1:51475"
+rpc_mode = "core"
+# Optional public mainnet data, independent of the testnet-only payment node.
+# Remove/set empty to serve the local testnet's chain/governance data instead.
+analytics_rpc_url = "https://rpc.pivxla.bz/mainnet"
+# Credentials: PIVX_RPC_USER and PIVX_RPC_PASSWORD, kept outside this file.
+poll_seconds = 10
+max_sync_age = 180
+max_sync_lag = 2
+
+quote_seconds = 600
+token_seconds = 900
+single_access_seconds = 86400
+digest_max_age = 86400
+digest_window_days = 7
+
+# Fixed reference only: tPIV has no cash value. No price API is needed.
+# References produce 0.05 / 0.25 / 2.00 tPIV at the default rate of 1.
+price_mode = "fixed_testnet"
+testnet_reference_rate = "1"
+analytics_usd = "0.05"
+digest_usd = "0.25"
+week_usd = "2.00"
+
+[[feeds]]
+name = "PIVX Core"
+url = "https://github.com/PIVX-Project/PIVX/releases.atom"
+topic = "PIVX"
+
+[[feeds]]
+name = "PIVX Agent Kit"
+url = "https://github.com/PIVX-Labs/pivx-agent-kit/releases.atom"
+topic = "agent-payments"
+
+[[feeds]]
+name = "Monero"
+url = "https://github.com/monero-project/monero/releases.atom"
+topic = "XMR"
+
+[[feeds]]
+name = "Zcash"
+url = "https://github.com/zcash/zcash/releases.atom"
+topic = "ZEC"
