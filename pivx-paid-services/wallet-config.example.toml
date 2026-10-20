@@ -1,0 +1,9 @@
+# Dedicated payer node, separate from the receiving node/wallet.
+network = "testnet6"
+data_dir = "./data/testnet6-payer-journal"
+rpc_url = "http://127.0.0.1:51477"
+address = "REPLACE_WITH_PAYER_PTESTSAPLING1_ADDRESS"
+allowed_receivers = ["REPLACE_WITH_SERVICE_PTESTSAPLING1_ADDRESS"]
+max_amount_tpiv = "10"
+# Credentials: PIVX_PAYER_RPC_USER and PIVX_PAYER_RPC_PASSWORD.
+# This tool cannot import or unlock a wallet. Keep its send journal for retries.

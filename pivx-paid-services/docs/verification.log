@@ -1,0 +1,281 @@
+test_empty_latency_report_does_not_claim_live_target (tests.test_artifacts.ArtifactTests.test_empty_latency_report_does_not_claim_live_target) ... ok
+test_sixty_simulated_payments_do_not_claim_live_latency_target (tests.test_artifacts.ArtifactTests.test_sixty_simulated_payments_do_not_claim_live_latency_target) ... ok
+test_static_export_has_relative_assets_and_only_public_aggregates (tests.test_artifacts.ArtifactTests.test_static_export_has_relative_assets_and_only_public_aggregates) ... ok
+test_cli_recovers_after_invoice_response_is_lost (tests.test_cli.CLITests.test_cli_recovers_after_invoice_response_is_lost) ... ok
+test_headless_demo_subprocess_completes_both_services_without_network (tests.test_cli.CLITests.test_headless_demo_subprocess_completes_both_services_without_network) ... ok
+test_operator_backup_has_integrity_and_owner_only_permissions (tests.test_cli.CLITests.test_operator_backup_has_integrity_and_owner_only_permissions) ... ok
+test_operator_exports_only_aggregate_statistics (tests.test_cli.CLITests.test_operator_exports_only_aggregate_statistics) ... ok
+test_operator_refund_record_is_idempotent (tests.test_cli.CLITests.test_operator_refund_record_is_idempotent) ... ok
+test_address_checksum (tests.test_payments.PurchaseTests.test_address_checksum) ... ok
+test_cannot_reuse_ledger_with_another_signing_key (tests.test_payments.PurchaseTests.test_cannot_reuse_ledger_with_another_signing_key) ... ok
+test_concurrent_distinct_calls_cannot_overspend (tests.test_payments.PurchaseTests.test_concurrent_distinct_calls_cannot_overspend) ... ok
+test_concurrent_retries_charge_once (tests.test_payments.PurchaseTests.test_concurrent_retries_charge_once) ... ok
+test_confirmation_wait_does_not_expire_timely_payment (tests.test_payments.PurchaseTests.test_confirmation_wait_does_not_expire_timely_payment) ... ok
+test_credit_funded_access_is_revoked_if_original_payment_reorgs (tests.test_payments.PurchaseTests.test_credit_funded_access_is_revoked_if_original_payment_reorgs) ... ok
+test_cross_service_and_tampered_tokens (tests.test_payments.PurchaseTests.test_cross_service_and_tampered_tokens) ... ok
+test_cross_session_isolation (tests.test_payments.PurchaseTests.test_cross_session_isolation) ... ok
+test_delivered_invoice_cannot_be_cancelled (tests.test_payments.PurchaseTests.test_delivered_invoice_cannot_be_cancelled) ... ok
+test_duplicate_ticks_count_receipt_once (tests.test_payments.PurchaseTests.test_duplicate_ticks_count_receipt_once) ... ok
+test_expired_invoice_releases_credit_reservation (tests.test_payments.PurchaseTests.test_expired_invoice_releases_credit_reservation) ... ok
+test_failing_service_does_not_consume_quota (tests.test_payments.PurchaseTests.test_failing_service_does_not_consume_quota) ... ok
+test_full_analytics_purchase_and_retry (tests.test_payments.PurchaseTests.test_full_analytics_purchase_and_retry) ... ok
+test_invoice_idempotency_and_conflict (tests.test_payments.PurchaseTests.test_invoice_idempotency_and_conflict) ... ok
+test_late_payment_is_credit_only (tests.test_payments.PurchaseTests.test_late_payment_is_credit_only) ... ok
+test_memo_is_exact (tests.test_payments.PurchaseTests.test_memo_is_exact) ... ok
+test_overpayment_credit_and_credit_purchase (tests.test_payments.PurchaseTests.test_overpayment_credit_and_credit_purchase) ... ok
+test_partial_expiry_becomes_credit (tests.test_payments.PurchaseTests.test_partial_expiry_becomes_credit) ... ok
+test_partial_topup (tests.test_payments.PurchaseTests.test_partial_topup) ... ok
+test_quote_expiry (tests.test_payments.PurchaseTests.test_quote_expiry) ... ok
+test_quote_uses_integer_round_up (tests.test_payments.PurchaseTests.test_quote_uses_integer_round_up) ... ok
+test_receipts_survive_wallet_sweep_and_restart (tests.test_payments.PurchaseTests.test_receipts_survive_wallet_sweep_and_restart) ... ok
+test_receiver_rejects_duplicate_note_in_snapshot (tests.test_payments.PurchaseTests.test_receiver_rejects_duplicate_note_in_snapshot) ... ok
+test_receiver_rejects_float_amount (tests.test_payments.PurchaseTests.test_receiver_rejects_float_amount) ... ok
+test_receiver_rejects_receipt_mutation (tests.test_payments.PurchaseTests.test_receiver_rejects_receipt_mutation) ... ok
+test_receiver_rejects_wrong_wallet (tests.test_payments.PurchaseTests.test_receiver_rejects_wrong_wallet) ... ok
+test_refund_cancellation_releases_reserved_credit_once (tests.test_payments.PurchaseTests.test_refund_cancellation_releases_reserved_credit_once) ... ok
+test_refund_reservation_and_idempotency (tests.test_payments.PurchaseTests.test_refund_reservation_and_idempotency) ... ok
+test_reorg_revokes_entitlement_and_freezes_credit_owner (tests.test_payments.PurchaseTests.test_reorg_revokes_entitlement_and_freezes_credit_owner) ... ok
+test_stale_receiver_pauses_purchase_and_consumption (tests.test_payments.PurchaseTests.test_stale_receiver_pauses_purchase_and_consumption) ... ok
+test_stats_do_not_expose_payment_or_buyer_identifiers (tests.test_payments.PurchaseTests.test_stats_do_not_expose_payment_or_buyer_identifiers) ... ok
+test_token_refresh_preserves_quota (tests.test_payments.PurchaseTests.test_token_refresh_preserves_quota) ... ok
+test_unused_paid_invoice_can_be_cancelled_for_confirmed_credit (tests.test_payments.PurchaseTests.test_unused_paid_invoice_can_be_cancelled_for_confirmed_credit) ... ok
+test_week_pass_requires_three_confirmations (tests.test_payments.PurchaseTests.test_week_pass_requires_three_confirmations) ... ok
+test_weekly_totals_include_calls_from_current_second (tests.test_payments.PurchaseTests.test_weekly_totals_include_calls_from_current_second) ... ok
+test_wrong_memo_does_not_fulfill (tests.test_payments.PurchaseTests.test_wrong_memo_does_not_fulfill) ... ok
+test_all_digest_sources_down_fails (tests.test_sources.SourceTests.test_all_digest_sources_down_fails) ... ok
+test_analytics_preserves_source_schema_and_omits_payee (tests.test_sources.SourceTests.test_analytics_preserves_source_schema_and_omits_payee) ... ok
+test_atom_and_rss_digest_excerpts_are_sourced (tests.test_sources.SourceTests.test_atom_and_rss_digest_excerpts_are_sourced) ... ok
+test_core_and_gateway_rpc_formats_and_no_mutation_methods (tests.test_sources.SourceTests.test_core_and_gateway_rpc_formats_and_no_mutation_methods) ... ok
+test_digest_declares_partial_coverage_and_no_fabrication (tests.test_sources.SourceTests.test_digest_declares_partial_coverage_and_no_fabrication) ... ok
+test_feed_entities_and_invalid_xml_rejected (tests.test_sources.SourceTests.test_feed_entities_and_invalid_xml_rejected) ... ok
+test_fresh_price_and_restart_cache (tests.test_sources.SourceTests.test_fresh_price_and_restart_cache) ... ok
+test_rpc_rejects_invalid_tip_and_hash (tests.test_sources.SourceTests.test_rpc_rejects_invalid_tip_and_hash) ... ok
+test_stale_and_invalid_prices_rejected (tests.test_sources.SourceTests.test_stale_and_invalid_prices_rejected) ... ok
+test_all_payment_responses_identify_testnet (tests.test_testnet.TestnetTests.test_all_payment_responses_identify_testnet) ... ok
+test_config_disallows_mainnet_and_live_snapshot (tests.test_testnet.TestnetTests.test_config_disallows_mainnet_and_live_snapshot) ... ok
+test_core_duplicate_output_is_rejected (tests.test_testnet.TestnetTests.test_core_duplicate_output_is_rejected) ... ok
+test_core_invalid_receipts_do_not_enter_ledger (tests.test_testnet.TestnetTests.test_core_invalid_receipts_do_not_enter_ledger) ... ok
+test_core_padded_hex_memo_and_different_output_indices (tests.test_testnet.TestnetTests.test_core_padded_hex_memo_and_different_output_indices) ... ok
+test_core_payment_fulfills_and_repeated_output_is_idempotent (tests.test_testnet.TestnetTests.test_core_payment_fulfills_and_repeated_output_is_idempotent) ... ok
+test_core_rpc_preserves_atomic_amount_precision (tests.test_testnet.TestnetTests.test_core_rpc_preserves_atomic_amount_precision) ... ok
+test_core_tip_change_retries_before_fulfillment (tests.test_testnet.TestnetTests.test_core_tip_change_retries_before_fulfillment) ... ok
+test_core_uses_address_and_confirmed_only_receiving_rpc (tests.test_testnet.TestnetTests.test_core_uses_address_and_confirmed_only_receiving_rpc) ... ok
+test_core_wrong_memo_and_change_are_not_payments (tests.test_testnet.TestnetTests.test_core_wrong_memo_and_change_are_not_payments) ... ok
+test_database_binding_includes_receiver (tests.test_testnet.TestnetTests.test_database_binding_includes_receiver) ... ok
+test_fixed_testnet_prices_do_not_need_coingecko (tests.test_testnet.TestnetTests.test_fixed_testnet_prices_do_not_need_coingecko) ... ok
+test_mainnet_analytics_source_is_separate_from_payment_chain (tests.test_testnet.TestnetTests.test_mainnet_analytics_source_is_separate_from_payment_chain) ... ok
+test_mainnet_and_old_testnet_genesis_are_rejected (tests.test_testnet.TestnetTests.test_mainnet_and_old_testnet_genesis_are_rejected) ... ok
+test_reincluded_receipt_quarantines_previously_paid_invoice (tests.test_testnet.TestnetTests.test_reincluded_receipt_quarantines_previously_paid_invoice) ... ok
+test_snapshot_does_not_accept_another_recipient_in_same_wallet (tests.test_testnet.TestnetTests.test_snapshot_does_not_accept_another_recipient_in_same_wallet) ... ok
+test_syncing_or_unknown_sync_state_is_rejected (tests.test_testnet.TestnetTests.test_syncing_or_unknown_sync_state_is_rejected) ... ok
+test_testnet_address_decodes_and_mainnet_is_rejected (tests.test_testnet.TestnetTests.test_testnet_address_decodes_and_mainnet_is_rejected) ... ok
+test_changed_amount_cannot_reuse_invoice (tests.test_testnet_wallet.TestnetWalletTests.test_changed_amount_cannot_reuse_invoice) ... ok
+test_concurrent_identical_payments_broadcast_only_once (tests.test_testnet_wallet.TestnetWalletTests.test_concurrent_identical_payments_broadcast_only_once) ... ok
+test_expired_unready_paid_or_over_limit_invoice_is_refused (tests.test_testnet_wallet.TestnetWalletTests.test_expired_unready_paid_or_over_limit_invoice_is_refused) ... ok
+test_payer_has_a_longer_proof_timeout_and_separate_credentials (tests.test_testnet_wallet.TestnetWalletTests.test_payer_has_a_longer_proof_timeout_and_separate_credentials) ... ok
+test_payer_journal_bound_to_wallet_and_owner_only (tests.test_testnet_wallet.TestnetWalletTests.test_payer_journal_bound_to_wallet_and_owner_only) ... ok
+test_restart_retry_returns_original_without_another_send (tests.test_testnet_wallet.TestnetWalletTests.test_restart_retry_returns_original_without_another_send) ... ok
+test_send_timeout_remains_uncertain_after_restart (tests.test_testnet_wallet.TestnetWalletTests.test_send_timeout_remains_uncertain_after_restart) ... ok
+test_send_uses_shield_source_exact_amount_and_plain_memo (tests.test_testnet_wallet.TestnetWalletTests.test_send_uses_shield_source_exact_amount_and_plain_memo) ... ok
+test_simulation_mainnet_missing_network_and_asset_are_refused (tests.test_testnet_wallet.TestnetWalletTests.test_simulation_mainnet_missing_network_and_asset_are_refused) ... ok
+test_wallet_mcp_discovery_and_send (tests.test_testnet_wallet.TestnetWalletTests.test_wallet_mcp_discovery_and_send) ... ok
+test_wrong_network_fails_before_intent_or_send (tests.test_testnet_wallet.TestnetWalletTests.test_wrong_network_fails_before_intent_or_send) ... ok
+test_actual_http_purchase_and_result (tests.test_transport.HTTPTests.test_actual_http_purchase_and_result) ... ok
+test_all_static_pages_and_assets_are_served (tests.test_transport.HTTPTests.test_all_static_pages_and_assets_are_served) ... ok
+test_http_auth_origin_host_json_and_limits (tests.test_transport.HTTPTests.test_http_auth_origin_host_json_and_limits) ... ok
+test_http_session_endpoint_and_cross_account (tests.test_transport.HTTPTests.test_http_session_endpoint_and_cross_account) ... ok
+test_mcp_all_five_tools_over_real_http_wire (tests.test_transport.HTTPTests.test_mcp_all_five_tools_over_real_http_wire) ... ok
+test_readiness_and_public_stats_headers (tests.test_transport.HTTPTests.test_readiness_and_public_stats_headers) ... ok
+test_service_and_payer_mcp_complete_core_fixture_purchase (tests.test_transport.HTTPTests.test_service_and_payer_mcp_complete_core_fixture_purchase)
+Both MCP dispatchers + actual HTTP framing + Core-shaped receipts. ... ok
+test_protocol_errors_are_jsonrpc_errors (tests.test_transport.MCPProtocolTests.test_protocol_errors_are_jsonrpc_errors) ... ok
+test_stdio_subprocess_handshake_notifications_and_five_tools (tests.test_transport.MCPProtocolTests.test_stdio_subprocess_handshake_notifications_and_five_tools) ... ok
+
+----------------------------------------------------------------------
+Ran 91 tests in 3.058s
+
+OK
+TAP version 13
+# Subtest: catalog renders two services and simulation indicator
+ok 1 - catalog renders two services and simulation indicator
+  ---
+  duration_ms: 4.762834
+  ...
+# Subtest: receiver readiness recovers after initial sync
+ok 2 - receiver readiness recovers after initial sync
+  ---
+  duration_ms: 1.191666
+  ...
+# Subtest: concurrent session creation produces one private session
+ok 3 - concurrent session creation produces one private session
+  ---
+  duration_ms: 1.406583
+  ...
+# Subtest: lost invoice response retries with the same quote and request ID
+ok 4 - lost invoice response retries with the same quote and request ID
+  ---
+  duration_ms: 16.156375
+  ...
+# Subtest: source text is inserted as text, without HTML execution
+ok 5 - source text is inserted as text, without HTML execution
+  ---
+  duration_ms: 1.006834
+  ...
+# Subtest: stats render genuine zero totals and a 30-day chart
+ok 6 - stats render genuine zero totals and a 30-day chart
+  ---
+  duration_ms: 1.297
+  ...
+# Subtest: failed statistics do not substitute fake totals
+ok 7 - failed statistics do not substitute fake totals
+  ---
+  duration_ms: 1.613542
+  ...
+# Subtest: GitHub Pages export fetches stats relative to its project directory
+ok 8 - GitHub Pages export fetches stats relative to its project directory
+  ---
+  duration_ms: 1.449208
+  ...
+# Subtest: fixed testnet catalog displays tPIV prices rather than dollar amounts
+ok 9 - fixed testnet catalog displays tPIV prices rather than dollar amounts
+  ---
+  duration_ms: 0.997834
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 80.733791
+{
+  "simulation": true,
+  "real_transactions": 0,
+  "purchases": [
+    {
+      "service": "analytics",
+      "product": "single",
+      "state": "paid",
+      "required_confirmations": 1,
+      "result": {
+        "schema_version": "1.0",
+        "service_id": "analytics",
+        "request_id": "demo-result",
+        "data": {
+          "schema_version": "1.0",
+          "generated_at": 1792260102,
+          "simulation": true,
+          "network": {
+            "chain": "SIMULATED",
+            "blocks": 104
+          },
+          "connections": 0,
+          "next_superblock_height": 144,
+          "blocks_until_superblock": 40,
+          "masternodes": {
+            "total": 0
+          },
+          "proposals": [],
+          "sources": [
+            {
+              "name": "Local test fixture"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "service": "digest",
+      "product": "week",
+      "state": "paid",
+      "required_confirmations": 3,
+      "result": {
+        "schema_version": "1.0",
+        "service_id": "digest",
+        "request_id": "demo-result",
+        "data": {
+          "schema_version": "1.0",
+          "generated_at": 1792260102,
+          "simulation": true,
+          "window": {
+            "from": 1791655302,
+            "to": 1792260102
+          },
+          "method": "Local simulation; no collected news",
+          "partial_coverage": false,
+          "items": [],
+          "coverage": [
+            {
+              "name": "Local test fixture",
+              "status": "ok",
+              "fetched_at": 1792260102
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "stats": {
+    "schema_version": "1.0",
+    "generated_at": 1792260102,
+    "timezone": "UTC",
+    "window_days": 30,
+    "network": "testnet6",
+    "payment_asset": "tPIV",
+    "simulation": true,
+    "receiver_ready": true,
+    "totals": {
+      "paid_calls": 2,
+      "unique_integrations": 1,
+      "piv_volume_sat": 205000000,
+      "payment_count": 2
+    },
+    "daily": [
+      {
+        "day": "2026-10-17",
+        "paid_calls": 2,
+        "integrations": 1,
+        "piv_volume_sat": 205000000,
+        "payment_count": 2
+      }
+    ],
+    "weekly": [
+      {
+        "from": 1791655302,
+        "to": 1792260103,
+        "paid_calls": 2,
+        "unique_integrations": 1,
+        "piv_volume_sat": 205000000,
+        "payment_count": 2
+      },
+      {
+        "from": 1791050502,
+        "to": 1791655302,
+        "paid_calls": 0,
+        "unique_integrations": 0,
+        "piv_volume_sat": 0,
+        "payment_count": 0
+      },
+      {
+        "from": 1790445702,
+        "to": 1791050502,
+        "paid_calls": 0,
+        "unique_integrations": 0,
+        "piv_volume_sat": 0,
+        "payment_count": 0
+      },
+      {
+        "from": 1789840902,
+        "to": 1790445702,
+        "paid_calls": 0,
+        "unique_integrations": 0,
+        "piv_volume_sat": 0,
+        "payment_count": 0
+      }
+    ],
+    "payer_metric": "Unique anonymous integration sessions that consumed a paid call; not unique wallets.",
+    "volume_metric": "Confirmed invoice-bound receipts, including excess and late credit, before refunds. Duplicate observations count once."
+  }
+}
